@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  */
 public class librosVentana extends javax.swing.JDialog {
 
-    libros objeto = new libros();
+    
     ArrayList<libros> lista = new ArrayList();
     public librosVentana(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -158,6 +158,7 @@ public class librosVentana extends javax.swing.JDialog {
 
     private void guardarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnActionPerformed
         try {
+            libros objeto = new libros();
             objeto.setAnioCreacion(creacionTxt.getText());
             objeto.setTitulo(tituloTxt.getText());
             objeto.setAutor(autorTxt.getText());

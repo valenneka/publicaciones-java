@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  */
 public class revistasVentana extends javax.swing.JDialog {
 
-    revistas objeto = new revistas();
+    
     ArrayList<revistas> lista = new ArrayList();
 
     public revistasVentana(java.awt.Frame parent, boolean modal) {
@@ -151,6 +151,7 @@ public class revistasVentana extends javax.swing.JDialog {
 
     private void guardarBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarBtnActionPerformed
         try {
+            revistas objeto = new revistas();
             objeto.setAnioCreacion(creacionTxt.getText());
             objeto.setTitulo(tituloTxt.getText());
             objeto.setTipo(tipoTxt.getText());
